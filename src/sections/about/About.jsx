@@ -2,8 +2,8 @@ import './about.css';
 
 export default function About() {
     return (
-        <div id="about">
+        <section id="about">
             <h2>About</h2>
-        </div>
+        </section>
     )
 }
