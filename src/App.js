@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './sections/navbar/Navbar.jsx';
+import Header from './sections/header/Header.jsx';
+import About from './sections/about/About.jsx';
+import Services from './sections/services/Services.jsx';
+import Portfolio from './sections/portfolio/Portfolio.jsx';
+import FAQs from './sections/faqs/FAQs.jsx';
+import Contact from './sections/contact/Contact.jsx';
+import Footer from './sections/footer/Footer.jsx';
+import FloatingNav from './sections/floating-nav/FloatingNav.jsx';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Navbar />
+      <Header />
+      <About />
+      <Services />
+      <Portfolio />
+      <FAQs />
+      <Contact />
+      <Footer />
+      <FloatingNav />
+    </main>
   );
 }
-
-export default App;
